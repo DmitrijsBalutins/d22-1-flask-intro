@@ -8,11 +8,11 @@ def getIndex():
 
 @app.route('/home')
 def getHome():
-  return render_template('home.html')
+  return render_template('home.html', active_page = 'home')
 
 @app.route('/about')
 def about():
-  return render_template('about.html')
+  return render_template('about.html', active_page = 'about')
 
 @app.route('/contact')
 def contact():
